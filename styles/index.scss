@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2b292d;
+}
+.page {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.action-button {
+  width: 168px;
+  height: 48px;
+  background-color: #3040c4;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+}
+@import 'header.scss';
+@import 'headline.scss';
