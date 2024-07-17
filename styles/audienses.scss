@@ -1,0 +1,120 @@
+.audienses {
+  width: 100%;
+  background-color: #00a1c6;
+}
+
+.audienses__container {
+  padding: 50px 15px 35px 15px;
+  display: flex;
+  flex-direction: column;
+  @include for-extra-small {
+    padding: 108px 0px 110px 0px;
+  }
+}
+
+.audienses__content_subtitle {
+  margin-bottom: 17px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 34px;
+  @include for-extra-small {
+    margin-bottom: 24px;
+  }
+}
+
+.audienses__content_title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  letter-spacing: 0.36px;
+  @include for-extra-small {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 556px;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+  }
+}
+
+.audienses__content_text {
+  text-align: center;
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 30px;
+  @include for-extra-small {
+    margin: 0 auto;
+    margin-bottom: 34px;
+    width: 556px;
+  }
+}
+
+.audienses__action {
+  margin-bottom: 40px;
+  @include for-extra-small {
+    text-align: center;
+    margin-bottom: 111px;
+  }
+}
+
+.audienses__button {
+  width: 100%;
+  @include for-extra-small {
+    width: 168px;
+  }
+}
+
+.audienses__button:not(:last-child) {
+  margin-bottom: 12px;
+  @include for-extra-small {
+    margin-right: 6px;
+    margin-bottom: 0;
+  }
+}
+
+.audienses__gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include for-extra-small {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.audienses__figure {
+  width: 290px;
+  height: 300px;
+  margin: 15px;
+  padding-top: 22px;
+  padding-bottom: 33px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  &:hover {
+    background-color: #3141c5;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 11px 55px 0 rgba(0, 0, 0, 0.07),
+      0 29px 45px 0 rgba(0, 0, 0, 0.08), 0 13px 18px 0 rgba(0, 0, 0, 0.15);
+  }
+  @include for-extra-small {
+    width: 262px;
+    margin: 0;
+  }
+}
+
+.audienses__figure_img {
+  margin-bottom: 22px;
+}
+
+.audienses__figure_caption {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+}

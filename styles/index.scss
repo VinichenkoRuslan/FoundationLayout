@@ -1,5 +1,15 @@
+@import 'layout.scss';
 * {
   box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 html {
   font-family: 'Work Sans', sans-serif;
@@ -7,9 +17,17 @@ html {
   font-weight: 400;
   color: #2b292d;
 }
-.page {
-  width: 1400px;
+[class*='__container'] {
+  max-width: 1140px;
   margin: 0 auto;
+}
+.page {
+  width: 100%;
+  overflow: hidden;
+  @include for-extra-small {
+    width: 1400px;
+    margin: 0 auto;
+  }
 }
 
 .action-button {
@@ -22,5 +40,19 @@ html {
   border: none;
   border-radius: 2px;
 }
+.learn-more-btn {
+  width: 168px;
+  height: 48px;
+  background-color: #fff;
+  color: #3040c4;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+}
+
 @import 'header.scss';
 @import 'headline.scss';
+@import 'about.scss';
+@import 'coustomers.scss';
+@import 'audienses.scss';

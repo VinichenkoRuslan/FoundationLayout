@@ -1,63 +1,104 @@
 .headline {
-  display: flex;
-  width: 1140px;
-  margin: auto;
-  margin-top: 84px;
-  padding-bottom: 77px;
+  width: 100%;
+  background-color: #f3c6bd;
+  padding-top: 35px;
+  @include for-extra-small {
+    padding-top: 47px;
+    padding-bottom: 36px;
+  }
+
   &__content {
-    position: absolute;
-    z-index: 1;
-    &_title {
-      width: 754px;
-      font-size: 80px;
-      line-height: 78px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      margin: 0;
+    @include for-extra-small {
+      position: absolute;
+      z-index: 1;
     }
+
+    &_title {
+      margin: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 50px;
+      font-weight: 700;
+      letter-spacing: -0.31px;
+      @include for-extra-small {
+        width: 754px;
+        padding: 0;
+        font-size: 80px;
+        line-height: 78px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        margin: 0;
+      }
+    }
+
     &_discription {
-      width: 456px;
-      margin-top: 34px;
-      margin-bottom: 0;
       font-size: 24px;
       line-height: 34px;
+      padding-left: 15px;
+      padding-right: 15px;
+      @include for-extra-small {
+        width: 456px;
+        padding: 0;
+        margin-top: 34px;
+        margin-bottom: 0;
+        font-size: 24px;
+        line-height: 34px;
+      }
     }
   }
+
+  &__action {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 32px;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 15px;
+    @include for-extra-small {
+      flex-direction: row;
+      margin-top: 58px;
+      padding: 0;
+    }
+
+    &-button {
+      width: 100%;
+      height: 48px;
+      background-color: #3040c4;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      border: none;
+      border-radius: 2px;
+      @include for-extra-small {
+        width: 168px;
+      }
+    }
+  }
+
+  &__learn-more-btn {
+    height: 48px;
+    background-color: #fff;
+    color: #3040c4;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 2px;
+    @include for-extra-small {
+      width: 168px;
+    }
+  }
+
   &__banner {
-    margin-left: auto;
-    position: relative;
-    top: 0;
-    right: -105px;
-    width: 796px;
-    height: 448px;
+    max-width: 100%;
+    margin-top: 33px;
+    @include for-extra-small {
+      margin: 0;
+      position: relative;
+      top: 7px;
+      right: -445px;
+      width: 796px;
+      height: 448px;
+    }
   }
-  &__actions {
-    margin-top: 58px;
-  }
-}
-
-.headline__content {
-}
-.headline__content_title {
-}
-.headline__content_discription {
-}
-.action-button {
-}
-.headline__learn-more-btn {
-  width: 168px;
-  height: 48px;
-  background-color: #fff;
-  color: #3040c4;
-  font-size: 18px;
-  font-weight: 700;
-  border: none;
-  border-radius: 2px;
-}
-
-.headline__banner {
-}
-.action-button {
-}
-.headline__learn-more-btn {
 }

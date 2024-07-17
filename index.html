@@ -19,34 +19,41 @@
   </head>
   <body>
     <div class="page">
-      <div class="top-section">
-        <header class="header">
-          <div class="logo">
-            <img
-              class="logo__image"
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon.png"
-              alt="logotip"
-            />
-            <div class="logo__text">
-              <div class="logo__name">Foundation</div>
-              <div class="logo__description">Startup landing template</div>
-            </div>
+      <header class="header">
+        <div class="logo">
+          <img
+            class="logo__image"
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon.png"
+            alt="logotip"
+          />
+          <div class="logo__text">
+            <div class="logo__name">Foundation</div>
+            <div class="logo__description">Startup landing template</div>
           </div>
-          <nav class="navigation">
-            <a href="#" class="navigation__item navigation__item_selected"
-              >Home</a
-            >
-            <a href="#" class="navigation__item">Stories</a>
-            <a href="#" class="navigation__item">
-              Library<i class="navigation__arrow"></i
-            ></a>
-          </nav>
-          <button class="action-button">Get Started</button>
-        </header>
+        </div>
+        <nav class="navigation">
+          <a href="#" class="navigation__item navigation__item_selected"
+            >Home</a
+          >
+          <a href="#" class="navigation__item">Stories</a>
+          <a href="#" class="navigation__item">
+            Library<i class="navigation__arrow"></i
+          ></a>
+        </nav>
+        <button class="action-button header__button">Get Started</button>
+        <button class="header__btn">
+          <img
+            class="header__btn_icon"
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png"
+            alt="Iconka burger"
+          />
+        </button>
+      </header>
 
-        <!-- Headline -->
+      <!-- Headline -->
 
-        <section class="headline">
+      <section class="headline">
+        <div class="headline__container">
           <div class="headline__content">
             <h1 class="headline__content_title">
               Build stunning websites & apps.
@@ -55,8 +62,8 @@
               Create live segments and target the right people for messages
               based on their behaviors.
             </p>
-            <div class="headline__actions">
-              <button class="action-button">Get Started</button>
+            <div class="headline__action">
+              <button class="headline__action-button">Get Started</button>
               <button class="headline__learn-more-btn">Learn More</button>
             </div>
           </div>
@@ -66,7 +73,193 @@
             src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/ouch.png"
             alt="Headline banner"
           />
-        </section>
+        </div>
+      </section>
+      <!-- about -->
+      <section class="about">
+        <div class="about__container">
+          <div class="about__block">
+            <h5 class="about__block_title">What is it about?</h5>
+            <p class="about__block_text">
+              Building a website for a startup that looks amazing is not a
+              rocket science anymore.
+            </p>
+          </div>
+          <div class="about__block">
+            <h5 class="about__block_title">Who is it for?</h5>
+            <p class="about__block_text">
+              Startups, small companies and teams, entrepreneurs and web
+              developers.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- coustomers -->
+
+      <div class="coustomers">
+        <div class="coustomers__container">
+          <div class="costomers__row">
+            <div class="costomers__item">
+              <img
+                class="coustomers__logo"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-nyt.png"
+                alt="The New York times-logo"
+              />
+            </div>
+
+            <div class="costomers__item">
+              <img
+                class="coustomers__logo"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-forbes.png"
+                alt="Forbes-logo"
+              />
+            </div>
+            <div class="costomers__item">
+              <img
+                class="coustomers__logo"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-apple.png"
+                alt="apple-logo"
+              />
+            </div>
+          </div>
+          <div class="costomers__row">
+            <div class="costomers__item">
+              <img
+                class="coustomers__logo"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-mashable.png"
+                alt="mashable-logo"
+              />
+            </div>
+            <div class="costomers__item">
+              <img
+                class="coustomers__logo"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-wsj.png"
+                alt="wsj-logo"
+              />
+            </div>
+            <div class="costomers__item">
+              <img
+                class="coustomers__logo"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-google.png"
+                alt="google-logo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- audienses  -->
+      <section class="audienses">
+        <div class="audienses__container">
+          <div class="audienses__content">
+            <h5 class="audienses__content_subtitle">Engage Visitors</h5>
+            <h2 class="audienses__content_title">Understand your audience</h2>
+            <p class="audienses__content_text">
+              Early stage company? Eligible applicants get all of our products
+              for just $49 a month.
+            </p>
+          </div>
+          <div class="audienses__action">
+            <button class="audienses__button action-button">Get Started</button>
+            <button class="audienses__button learn-more-btn">Learn More</button>
+          </div>
+          <div class="audienses__gallery">
+            <figure class="audienses__figure">
+              <img
+                class="audienses__figure_img"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-1.png"
+                alt="Boy icon"
+              />
+              <figcaption class="audienses__figure_caption">
+                Developers
+              </figcaption>
+            </figure>
+            <figure class="audienses__figure">
+              <img
+                class="audienses__figure_img"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-2.png"
+                alt="Television icon"
+              />
+              <figcaption class="audienses__figure_caption">
+                Entertainment
+              </figcaption>
+            </figure>
+            <figure class="audienses__figure">
+              <img
+                class="audienses__figure_img"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-3.png"
+                alt="sprinter icon"
+              />
+              <figcaption class="audienses__figure_caption">
+                Athletes
+              </figcaption>
+            </figure>
+            <figure class="audienses__figure">
+              <img
+                class="audienses__figure_img"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-4.png"
+                alt="Bolb icon"
+              />
+              <figcaption class="audienses__figure_caption">
+                Creators
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- coustomers -->
+
+      <div class="coustomers">
+        <div class="coustomers__container">
+          <div class="costomers__row">
+            <div class="costomers__item">
+              <img
+                class="coustomers__logo"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-nyt.png"
+                alt="The New York times-logo"
+              />
+            </div>
+
+            <div class="costomers__item">
+              <img
+                class="coustomers__logo"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-forbes.png"
+                alt="Forbes-logo"
+              />
+            </div>
+            <div class="costomers__item">
+              <img
+                class="coustomers__logo"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-apple.png"
+                alt="apple-logo"
+              />
+            </div>
+          </div>
+          <div class="costomers__row">
+            <div class="costomers__item">
+              <img
+                class="coustomers__logo"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-mashable.png"
+                alt="mashable-logo"
+              />
+            </div>
+            <div class="costomers__item">
+              <img
+                class="coustomers__logo"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-wsj.png"
+                alt="wsj-logo"
+              />
+            </div>
+            <div class="costomers__item">
+              <img
+                class="coustomers__logo"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-google.png"
+                alt="google-logo"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
